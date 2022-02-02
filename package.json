@@ -1,0 +1,20 @@
+{
+  "name": "kennengounounellylaure_7_26012022",
+  "version": "1.0.0",
+  "description": "Les petits plats : site de recettes de cuisine à l’instar de Marmiton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlkennengounou/KenneNgounouNellyLaure_7_26012022.git"
+  },
+  "author": "kenne nelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlkennengounou/KenneNgounouNellyLaure_7_26012022/issues"
+  },
+  "homepage": "https://github.com/nlkennengounou/KenneNgounouNellyLaure_7_26012022#readme"
+}

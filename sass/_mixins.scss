@@ -1,0 +1,68 @@
+// Use Css grid to display elements
+@mixin displayOnGrid($columns, $rows, $gap) {
+	align-items: center;
+	display: grid;
+	gap: $gap;
+	grid-template-columns: $columns;
+	grid-template-rows: $rows;
+	justify-content: center;
+}
+
+// style all filter option form
+@mixin form() {
+	display: flex;
+	height: 70px;
+	width: 100%;
+}
+
+// Style all drop up and down button
+@mixin button($type, $bgcolor, $color) {
+	border: none;
+	margin: 0;
+	padding: 0 1rem;
+	box-sizing: border-box;
+	color: white;
+    background-color: $bgcolor;
+    border-radius: 0 5px 5px 0;
+    color: $color;
+}
+
+// Style all text input 
+@mixin input($type, $bgColor,  $color, $phColor) {
+	border-radius: 5px 0px 0px 5px;
+	border: none;
+	color: $color;
+	margin: 0;
+    padding: 0 0 0 1rem;
+    width: 100%;
+	&::focus  {
+		outline: none;
+	}
+
+    background-color: $bgColor;
+    border-radius: 5px 0 0 5px;
+    &::placeholder {
+        color: $phColor;
+    }
+
+}
+
+// Style any filter option 
+@mixin researchBy($filter_option, $bgColor, $color, $phColor){
+    &__button {
+        @include button($filter_option, $bgColor, $color);
+    }
+    &__input {
+        @include input($filter_option, $bgColor, $color, $phColor);
+    }
+    &__results__undisplayed {
+        display: none;
+    }
+    &__results__displayed {
+        background-color: $bgColor;
+        color: white;
+        padding: 1rem;
+        border-radius: 0 5px 5px 5px;
+        margin: 0;
+    }
+}

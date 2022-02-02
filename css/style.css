@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800&display=swap");
+body {
+  background-color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  margin: 0 1rem;
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.research__bar {
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+.research__bar__input {
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  color: black;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  width: 100%;
+  background-color: #E7E7E7;
+  border-radius: 5px 0 0 5px;
+}
+.research__bar__input::focus  {
+  outline: none;
+}
+.research__bar__input::placeholder {
+  color: #C7BEBE;
+}
+.research__bar__submit {
+  border: none;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: #E7E7E7;
+  border-radius: 0 5px 5px 0;
+  color: black;
+}
+.research__fields {
+  display: grid;
+  gap: 0.5rem;
+}
+.research__fields__form {
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+.research__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ingredient__button {
+  border: none;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: #3282F7;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+.ingredient__input {
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  width: 100%;
+  background-color: #3282F7;
+  border-radius: 5px 0 0 5px;
+}
+.ingredient__input::focus  {
+  outline: none;
+}
+.ingredient__input::placeholder {
+  color: white;
+}
+.ingredient__results__undisplayed {
+  display: none;
+}
+.ingredient__results__displayed {
+  background-color: #3282F7;
+  color: white;
+  padding: 1rem;
+  border-radius: 0 5px 5px 5px;
+  margin: 0;
+}
+
+.appareil__button {
+  border: none;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: #68D9A4;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+.appareil__input {
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  width: 100%;
+  background-color: #68D9A4;
+  border-radius: 5px 0 0 5px;
+}
+.appareil__input::focus  {
+  outline: none;
+}
+.appareil__input::placeholder {
+  color: white;
+}
+.appareil__results__undisplayed {
+  display: none;
+}
+.appareil__results__displayed {
+  background-color: #68D9A4;
+  color: white;
+  padding: 1rem;
+  border-radius: 0 5px 5px 5px;
+  margin: 0;
+}
+
+.ustensiles__button {
+  border: none;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: #ED6454;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+.ustensiles__input {
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  width: 100%;
+  background-color: #ED6454;
+  border-radius: 5px 0 0 5px;
+}
+.ustensiles__input::focus  {
+  outline: none;
+}
+.ustensiles__input::placeholder {
+  color: white;
+}
+.ustensiles__results__undisplayed {
+  display: none;
+}
+.ustensiles__results__displayed {
+  background-color: #ED6454;
+  color: white;
+  padding: 1rem;
+  border-radius: 0 5px 5px 5px;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  .body {
+    align-items: center;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+
+  .header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .research {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .research__fields {
+    align-items: center;
+    display: grid;
+    gap: 0rem 0.5rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  .research__fields .ingredient {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .research__fields .appareil {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .research__fields .ustensiles {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .research__fields__form__results__ingredient {
+    grid-column: 1/span 6;
+    grid-row: 2;
+  }
+  .research__fields__form__results__appareil {
+    grid-column: 2/span 6;
+    grid-row: 2;
+  }
+  .research__fields__form__results__ustensiles {
+    grid-column: 3/span 6;
+    grid-row: 2;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

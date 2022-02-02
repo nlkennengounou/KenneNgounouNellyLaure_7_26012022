@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+@media screen and (min-width: $largeDevices) {
+	.header {
+		grid-column: 1;
+		grid-row: 1;
+	}
+}
