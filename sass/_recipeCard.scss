@@ -1,0 +1,87 @@
+.recipe__card {
+  &__placeholder {
+    background-color: #C7BEBE;
+    border-radius: 5px 5px 0 0;
+    height: 150px;
+  }
+
+  &__section {
+    padding: 0.5rem 1rem 2rem 1rem;
+    background-color: #E7E7E7;
+    border-radius: 0 0 5px 5px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin: 0;
+    &__time {
+      flex-direction: row-reverse;
+    }
+  }
+  &__aside {
+    align-items: center;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    height: 110px;
+    font-size: 12px;
+  }
+  &__list {
+    align-self: start;
+    font-size: 12px;
+    justify-self: start;
+    &__item {
+      list-style: none;
+      margin-left: -40px;
+    }
+  }
+  &__description {
+    align-self: start;
+    height: 118px;
+    justify-self: start;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    width: 100%;
+  }
+}
+
+.recette {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+  .recette {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+}
+
+/* Large devices */
+@media screen and (min-width: 992px) {
+  .recette {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+}

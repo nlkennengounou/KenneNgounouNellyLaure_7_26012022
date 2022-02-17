@@ -11,6 +11,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	&__bar {
+		margin-bottom: 15px;
 		@include form();
 		&__input {
 			@include input(researchBar, $primaryGrey, $black, $secondaryGrey);
