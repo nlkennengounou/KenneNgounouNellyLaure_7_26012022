@@ -6,6 +6,10 @@ body {
   margin: 0 1rem;
 }
 
+li {
+  list-style-type: none;
+}
+
 .research {
   display: flex;
   flex-direction: column;
@@ -93,6 +97,13 @@ body {
   padding: 1rem;
   border-radius: 0 5px 5px 5px;
   margin: 0;
+  position: absolute;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem 5rem;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
 }
 
 .appareil__button {
@@ -130,9 +141,16 @@ body {
   padding: 1rem;
   border-radius: 0 5px 5px 5px;
   margin: 0;
+  position: absolute;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem 5rem;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
 }
 
-.ustensiles__button {
+.ustensil__button {
   border: none;
   margin: 0;
   padding: 0 1rem;
@@ -142,7 +160,7 @@ body {
   border-radius: 0 5px 5px 0;
   color: white;
 }
-.ustensiles__input {
+.ustensil__input {
   border-radius: 5px 0px 0px 5px;
   border: none;
   color: white;
@@ -152,21 +170,28 @@ body {
   background-color: #ED6454;
   border-radius: 5px 0 0 5px;
 }
-.ustensiles__input::focus  {
+.ustensil__input::focus  {
   outline: none;
 }
-.ustensiles__input::placeholder {
+.ustensil__input::placeholder {
   color: white;
 }
-.ustensiles__results__undisplayed {
+.ustensil__results__undisplayed {
   display: none;
 }
-.ustensiles__results__displayed {
+.ustensil__results__displayed {
   background-color: #ED6454;
   color: white;
   padding: 1rem;
   border-radius: 0 5px 5px 5px;
   margin: 0;
+  position: absolute;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem 5rem;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
 }
 
 @media screen and (min-width: 992px) {
@@ -210,7 +235,7 @@ body {
     grid-column: 2;
     grid-row: 1;
   }
-  .research__fields .ustensiles {
+  .research__fields .ustensil {
     grid-column: 3;
     grid-row: 1;
   }
@@ -222,7 +247,7 @@ body {
     grid-column: 2/span 6;
     grid-row: 2;
   }
-  .research__fields__form__results__ustensiles {
+  .research__fields__form__results__ustensil {
     grid-column: 3/span 6;
     grid-row: 2;
   }
@@ -297,6 +322,39 @@ body {
   justify-content: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+
+.filter__query {
+  align-items: center;
+  background-color: #47597E;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.5rem 0.3rem;
+}
+.filter__query__icon {
+  padding: 0.3rem 0.3rem;
+}
+.filter__query__ingredient {
+  border: none;
+  color: white;
+  background-color: #3282F7;
+  border-radius: 5px;
+}
+.filter__query__appareil {
+  border: none;
+  color: white;
+  background-color: #68D9A4;
+  border-radius: 5px;
+}
+.filter__query__ustensil {
+  border: none;
+  color: white;
+  background-color: #ED6454;
+  border-radius: 5px;
 }
 
 /* Medium devices */

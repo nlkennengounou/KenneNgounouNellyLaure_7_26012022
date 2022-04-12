@@ -6,6 +6,10 @@ body {
 	margin: 0 1rem;
 }
 
+li{
+	list-style-type: none;
+}
+
 .research {
 	display: flex;
 	flex-direction: column;
@@ -29,12 +33,13 @@ body {
 	&__fields__form {
 		@include form();
 	}
-
+	
 	&__filters {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
 	}
+
 }
 
 .ingredient {
@@ -45,9 +50,12 @@ body {
 	@include researchBy("appareil", $green, $white, $white);
 }
 
-.ustensiles {
-	@include researchBy("ustensiles", $red, $white, $white);
+.ustensil {
+	@include researchBy("ustensil", $red, $white, $white);
 }
+
+
+
 
 // For large screen
 @media screen and (min-width: $largeDevices) {
@@ -81,7 +89,7 @@ body {
 			grid-column: 2;
 			grid-row: 1;
 		}
-		.ustensiles {
+		.ustensil {
 			grid-column: 3;
 			grid-row: 1;
 		}
@@ -95,10 +103,15 @@ body {
 				grid-column: 2 / span 6;
 				grid-row: 2;
 			}
-			&__ustensiles {
+			&__ustensil {
 				grid-column: 3 / span 6;
 				grid-row: 2;
 			}
 		}
 	}
+	
 }
+
+
+
+

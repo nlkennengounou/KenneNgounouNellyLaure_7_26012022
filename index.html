@@ -20,81 +20,8 @@
 		/>
   </head>
   
-  <body>
-        <!-- Entete page d'accueil -->
-        <header  class="header">
-            <a href="index.html" title="HomePage"> 
-                <img src="./assets/media/logo.svg" class="header__logo" alt="Logo de Les Petits Plats - page d'accueil"/>
-            </a>
-        </header>
-    
-        <!-- Barre de recherche page d'accueil -->
-        <div class="research">
-            <form class="research__bar">
-                <input
-                    class="research__bar__input"
-                    placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette"
-                    type="search"
-                />
-                <button class="research__bar__submit" type="submit">
-                    <i class="far fa-search"></i>
-                </button>
-            </form>
-            <aside class="research__filters"></aside>
-        </div>
-
-        <!-- option de filtres page d'accueil -->
-        <div class="research__fields">
-            <!-- filter by ingredient -->
-            <form class="research__fields__form ingredient__form">
-                <input
-                    class="research__fields__form__input ingredient__input"
-                    placeholder="Ingrédient"
-                    type="search"
-                />
-                <button class="research__fields__form__submit ingredient__button" type="button">
-                    <i class="far fa-chevron-down ingredient__chevron"></i>
-                </button>
-            </form>
-            <aside class="research__fields__form__results__ingredient">
-                <ul class="ingredient__results ingredient__results__undisplayed"></ul>
-            </aside>
-
-            <!-- filter by appareil -->
-            <form class="research__fields__form appareil__form">
-                <input
-                    class="research__fields__form__input appareil__input"
-                    placeholder="Appareil"
-                    type="search"
-                />
-                <button class="research__fields__form__submit appareil__button" type="button">
-                    <i class="far fa-chevron-down appareil__chevron"></i>
-                </button>
-            </form>
-            <aside class="research__fields__form__results__appareil">
-                <ul class="appareil__results appareil__results__undisplayed"></ul>
-            </aside>
-            
-            <!-- filter by ustensiles -->
-            <form class="research__fields__form ustensiles__form">
-                <input
-                    class="research__fields__form__input ustensiles__input"
-                    placeholder="Ustensiles"
-                    type="search"
-                />
-                <button class="research__fields__form__submit ustensiles__button" type="button">
-                    <i class="far fa-chevron-down ustensiles__chevron"></i>
-                </button>
-            </form>
-            <aside class="research__fields__form__results__ustensiles">
-                <ul class="ustensiles__results ustensiles__results__undisplayed"></ul>
-            </aside>
-        </div>
-
-        <section id="recette" class="recette"> 
-
-        </section>
-        
-        <script type="module" src="js/index.js"></script>
+  <body class="Application">
+        <index-page></index-page>
+        <script type="module" src="js/app.js"></script>
   </body>
 </html>
