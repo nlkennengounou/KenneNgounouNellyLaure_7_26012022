@@ -158,7 +158,6 @@ function matchSearchBar(recipes, request) {
 }
 
 function filteringredient(recipe, request){
-    let allingredients = recipe.ingredients;
     for(let ingredients of  recipe.ingredients){
         return ingredients.ingredient.toLowerCase().includes(request).length > 0
     }

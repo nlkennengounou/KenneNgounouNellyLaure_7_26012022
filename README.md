@@ -28,3 +28,9 @@ clonez le projet depuis un terminal
 git clone https://github.com/nlkennengounou/KenneNgounouNellyLaure_6_15122021.git
 
 lancer liveserver
+
+par défaut la recherche lance l'Algorithme A.
+si vous souhaitez tester l'algorithme B 
+- ouvrir le fichier js/search-results.js 
+- rechercher searchA et commenter les lignes (ctrl + /)   
+- rechercher searchB et décommenter les lignes ( ctrl + /)

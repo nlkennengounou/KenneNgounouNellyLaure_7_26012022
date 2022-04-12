@@ -8,7 +8,7 @@ export class SearchResult extends HTMLElement {
     constructor() {
         super();
         this.results = searchA("", [], [], []);
-        this.results = searchB("", [], [], []);
+        // this.results = searchB("", [], [], []);
 
         // mettre à jour la liste des recettes en fonction du resultat dans localStorage
         localStorage.clear();
@@ -268,7 +268,7 @@ export class SearchResult extends HTMLElement {
         console.log("Looking for # " + this.ustensils + " # in ustensil filter");
 
         this.results = searchA(this.request, this.appareils, this.ustensils, this.ingredients);
-        this.results = searchB(this.request, this.appareils, this.ustensils, this.ingredients);
+        // this.results = searchB(this.request, this.appareils, this.ustensils, this.ingredients);
 
         // mettre à jour la liste des recettes en fonction du resultat dans localStorage
         let dat = {'recipes': Object.values(this.results)};
